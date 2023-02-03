@@ -1,0 +1,83 @@
+
+
+/* Add the font family in here  */
+
+
+/* Add the outline padding and margin here  */
+*{
+
+/* Add in the variables here  */
+
+/* Add in the padding and marging here  */
+padding: 0; 
+margin: 0; 
+box-sizing: border-box;
+
+
+
+
+  
+}
+
+/* Add in the responsive body components in here  */
+
+body{
+
+/* Add in the min-height here  */
+min-height: 100vh; 
+
+/* Add in the width here  */
+width: 100%; 
+
+/* Add in the box sizing here  */
+box-sizing: border-box; 
+  
+}
+
+
+/* Add the code in here for the container  */
+
+.container{
+
+  /* Add in the page layout here  */
+
+  /* Add in the display type here  */
+
+  /* Add in the grid layout here  */
+
+}
+
+
+/* Select the different components here  */
+
+.footer{
+
+
+  
+}
+
+
+.navbar{
+
+
+
+}
+
+.picture{
+
+
+  
+}
+
+
+.paragraph{
+
+
+}
+
+
+.cards{
+
+
+  
+}

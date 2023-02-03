@@ -1,0 +1,162 @@
+
+
+*{
+
+padding: 0; 
+margin: 0; 
+box-sizing: border-box;
+ outline: 1px solid limegreen;
+ 
+/* background: rgb(0 100 0 / 0.1) !important;  */
+
+
+}
+
+
+
+body{
+
+/* Add the appropriate min-height */
+min-height: 100vh;;
+width: 100%;
+display: flex;
+/* justify-items: center;   */
+justify-content: center;
+/* margin-leftcontent: 3rem; */
+
+
+
+
+
+}
+
+.container{
+
+/* Add in the dimensions here  */
+min-height: 100vh; 
+width: 90vw;
+outline: solid 3px orange;
+
+
+/* Add the display type here  */
+display: grid;
+grid-template-columns: repeat(3, minmax(auto, 1fr)); 
+
+/* Center everything here 
+*/
+justify-content: center;
+justify-items: center; 
+
+
+/* Add in the grid template here  */
+
+
+}
+
+/* this is the section with trouble  */
+
+.cardContainer{
+  
+    outline: 4px solid blue;
+    /* Add in the dimensions here  */
+    /* width: 50rem;  */
+
+
+}
+
+/* Now assign each component their respective grid-area */
+
+
+
+/* The height here it auto  */
+.card{
+
+margin-right: 10%; 
+margin-left: 10%; 
+display: flex;
+justify-content: center; 
+margin-bottom: 4rem; 
+
+/* Add a height and width to this container and see if it makes a difference to the layout of the grid  */
+width: 100%;
+min-height: auto !important;
+
+/* outline: solid 4px white; */
+
+
+
+}
+
+
+
+.title{
+
+display: flex; 
+justify-content: center; 
+width: 100%;
+
+
+}
+
+.imageTag{
+
+    /* Set the dimensions of the image here except the height  */
+    /* Make sure the width is responsive  */
+    width: 100%;
+    border-radius: 5%;
+    
+
+}
+
+.button{
+    
+    /* grid-area: button; */
+    outline: 4px solid white !important; 
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    
+}
+
+.paragraph{
+
+    grid-area: paragraph;
+    
+    outline: 4px solid red;
+    border-radius: 5%; 
+    
+    
+}
+
+.cardImage{
+
+
+    width: 100%;
+    display: flex;  
+    justify-content: center;    
+    
+
+}
+/* THIS IS LIMITING THE IMAGE HEIGHT  */
+img {
+
+height: 30vh !important;
+/* max-height: auto !important; */
+
+}
+
+
+    @media (max-width: 768px){
+    
+    /* Find out why this is not working  */
+    .container{
+        
+        grid-template-columns: repeat(1, minmax(auto, 1fr)) !important;
+        
+    }
+}
+
+
+
+
+

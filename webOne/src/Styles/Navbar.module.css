@@ -1,0 +1,215 @@
+/* Import the font family here  */
+
+
+
+/* 
+
+
+
+*/
+
+
+*{
+
+/* Add in the outline here  */
+outline: solid 3px limegreen;
+
+/* Add in the background here  */
+/* background: rgb(0 100 0 / 0.1) !important;  */
+
+
+/* Add in the box sizing here  */
+box-sizing: border-box;
+
+/* Add in the padding and margin here  */
+padding: 0; 
+margin: 0; 
+
+}
+
+body{
+
+/* Add in the responsive dimensions here including min-height: 100vh */
+min-height: 100vh;
+/* This width could cause trouble later on watch it carefully */
+width: 100%;
+
+/* Add in the display type here  */
+
+/* Add in the layout here  */
+
+}
+
+
+/* Add in the container here  */
+
+.container{
+        
+    /* Add in the responsive dimensions here  */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Add in the flex or grid layout here  */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* background-color: white; */
+    
+    /* Add in the responsive padding and margin here  */
+    
+    /* Add in the alignment here  */
+    
+    /* Add in the layout here  */
+    
+    
+    /* Add in the typography here  */
+    
+
+
+}
+
+/* Add in the navbar here  */
+.navbar{
+    
+    /* Add in the responsive dimensions in here  */
+    width: 100vw;
+    height: 70px; 
+    /* overflow: hidden; */
+    
+    /* Set the positioning of the navbar here  */
+    position: relative; 
+    
+    
+    /* Add in the basic styling here  */
+    background-color: white;
+    
+    /* Add in the display type and layout here  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Add in the list container here  */
+
+
+/* Add in the list here  */
+
+.list ul{
+    
+display: inline-block;
+color: black;   
+list-style: none;
+
+}
+ul {
+    list-style: none;
+}
+li {
+
+    display: inline; 
+    
+}
+.listContaier{
+    
+    /* Add in alignment code    */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+
+
+}
+
+/* Add in the list item here  */
+.listItem{
+    
+    color: black;  
+    /* padding-right: 1%;  */
+    margin-right: 2rem; 
+
+}
+
+
+/* Add in the hover effects here  */
+.listItem:hover{
+
+    transform: scale(1.1);
+    transform: translateY(3deg);
+    
+}
+
+.logo{
+
+    color: black; 
+    padding-right: 5rem; 
+    
+}
+
+
+/* ADD HAMBURGER MENU CODE IN HERE  */
+.hamburgerMenu{
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+/* Add in the media query to change the dispaly type of the navbar  */
+@media  (min-width: 768px) {
+    
+    /* Select the navbar here  */
+    .navbar{
+    
+
+        
+    }
+    
+    /* Select the list container here  */
+    .listContainer{
+    
+    /* Set this to display none */
+    /* display: none; */
+    /* Move the list off the screen here  */
+    /* transform: translateX(-100%); */
+    
+    /*  */
+
+    }
+    
+    /* Select the Navbar container here  */
+    .container{
+    
+    }
+    
+    
+    /* */
+
+    
+}
+
+
+@media (max-width: 767px) {
+    /* Select the hamburger menu here  */
+    .hamburgerMenu{
+    
+        /* Move the Hamburer onto the screen here  */
+        /* Se the display to visible  */
+        
+    }
+    
+    
+}
+
+
+
+
+
