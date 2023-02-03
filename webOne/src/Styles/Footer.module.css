@@ -1,0 +1,136 @@
+
+/* Import the font family here  */
+
+:root{
+
+    /* Add in your variables here  */
+}
+
+
+*{
+
+/* Make sure that the padding and margin is set  */
+padding:0; 
+margin: 0; 
+outline: 4px solid lime; 
+box-sizing: border-box;
+
+
+}
+
+
+/* Place the body rule set here  */
+body{
+
+    /* Make the body responsive and ensure that the height is set to min-height: 100vh; */
+    /* Ensure that the width is the full width of the viewport  */
+    min-height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+
+}
+
+/* Put the main container here  */
+
+.footer{
+    /* Position the whole footer at the bottom of the page  */
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    padding-bottom: 3rem;
+    
+
+
+}
+
+
+
+/* Put the content container here  */
+.contentContainer{
+    
+    /* Turn the Footer into a grid here  */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem; 
+    
+    
+}
+.section{
+
+ 
+
+        
+    
+}
+
+/* Add in the intermediary containers here  */
+
+.headlineContainer{
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+
+.listContainer{
+
+    display: flex; 
+    justify-content: center;
+    
+
+}
+
+ ul {
+
+    list-style: none;
+    text-align: center;
+    text-decoration: none; 
+
+}
+/* Make this more specific  */
+li{
+
+   padding-top: 1rem; 
+   
+}
+
+/* Add in the ruleset for the social media container here  */
+.socialMediaSection{
+    
+    
+
+}
+
+.socialMediaItem{
+
+    /* display: inline; */
+    
+}
+.socialMediaList{
+    
+    /* display: inline; */
+
+}
+/*  */
+
+
+
+/* Add in the media queries to make everything responsive here  */
+
+@media (max-width: 758px){
+    
+    .contentContainer{
+    
+        /* Remove the grid gap  */
+         gap: 2rem; 
+        /* Reduce the amount of columns  */
+        grid-template-columns: repeat(1, 1fr);
+        overflow: scroll;
+        grid-template-rows: repeat(3, 2fr, 1fr, 2fr);
+        
+    }
+    
+}
