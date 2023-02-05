@@ -1,159 +1,119 @@
 /* Import the font family here  */
 
+/* Add the root variables in here  */
+:root{
 
-
-/* 
-
-
-
-*/
-
-
-*{
-
-/* Add in the outline here  */
-outline: solid 3px limegreen;
-
-/* Add in the background here  */
-/* background: rgb(0 100 0 / 0.1) !important;  */
-
-
-/* Add in the box sizing here  */
-box-sizing: border-box;
-
-/* Add in the padding and margin here  */
-padding: 0; 
-margin: 0; 
 
 }
+
+
+/* Add in the global ruleset here  */
+*{
+    /* Add in the padding and margin here  */
+    
+    
+    /* Add in the box sizing here  */
+    
+    /* Add in the outline here  */
+}
+
+/* Add in the html scroll behaviour here  */
+
+html{
+
+    scroll-behavior: smooth;
+    
+}
+
+
+/* Add in the body rule set here  */
 
 body{
 
-/* Add in the responsive dimensions here including min-height: 100vh */
-min-height: 100vh;
-/* This width could cause trouble later on watch it carefully */
-width: 100%;
-
-/* Add in the display type here  */
-
-/* Add in the layout here  */
-
+    /* Make sure that the body is a responsive height and width  */
+    width: 100vw; 
+    min-height: 100vh;
+    
+    /* Add in the background color here  */
+    
+    
 }
 
 
-/* Add in the container here  */
+/* Add in the container ruleset here  */
 
 .container{
-        
-    /* Add in the responsive dimensions here  */
-    width: 100vw;
-    height: 100vh;
-    
-    /* Add in the flex or grid layout here  */
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    /* background-color: white; */
-    
-    /* Add in the responsive padding and margin here  */
-    
-    /* Add in the alignment here  */
-    
-    /* Add in the layout here  */
+
+    width: 100vw;   
+    height: 60px;
     
     
-    /* Add in the typography here  */
     
+}
+
+/* Add in the styling for the main navbar here  */
+
+.navBar{
+
 
 
 }
 
-/* Add in the navbar here  */
-.navbar{
-    
-    /* Add in the responsive dimensions in here  */
-    width: 100vw;
-    height: 70px; 
-    /* overflow: hidden; */
-    
-    /* Set the positioning of the navbar here  */
-    position: relative; 
-    
-    
-    /* Add in the basic styling here  */
-    background-color: white;
-    
-    /* Add in the display type and layout here  */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.navContainer{
 
-
-
-/* Add in the list container here  */
-
-
-/* Add in the list here  */
-
-.list ul{
-    
-display: inline-block;
-color: black;   
-list-style: none;
-
-}
-ul {
-    list-style: none;
-}
-li {
-
-    display: inline; 
-    
-}
-.listContaier{
-    
-    /* Add in alignment code    */
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    
+background-color: whitesmoke;
+width: 100vw;
+height: 50px;
 
 
 }
 
-/* Add in the list item here  */
-.listItem{
+/* Add in the Logo container here  */
+
+
+.logo{
     
-    color: black;  
-    /* padding-right: 1%;  */
-    margin-right: 2rem; 
+    /* Make sure the logo is properly centered here  */
+    /* Find the Logo container and increase it's width appropriately  */
+    /* Then turn it into a flex container and center the contents  */
+    
 
 }
+
+    .listContainer{
+    
+    
+    
+    }
+    
+    
+    .list{
+    
+    
+    }
+    
+    
+    .listItem{
+        display: inline;
+        padding-right: 0.5rem;
+
+    }
+    
+
+
+/* Add in the styling and positioning for the Hamburger menu here  */
+
+
+/* Add in the sub containers here  */
+
+
 
 
 /* Add in the hover effects here  */
-.listItem:hover{
-
-    transform: scale(1.1);
-    transform: translateY(3deg);
-    
-}
-
-.logo{
-
-    color: black; 
-    padding-right: 5rem; 
-    
-}
 
 
-/* ADD HAMBURGER MENU CODE IN HERE  */
-.hamburgerMenu{
 
-
-    
-}
+/* Add in the media queries here  */
 
 
 
@@ -161,53 +121,6 @@ li {
 
 
 
-
-
-/* Add in the media query to change the dispaly type of the navbar  */
-@media  (min-width: 768px) {
-    
-    /* Select the navbar here  */
-    .navbar{
-    
-
-        
-    }
-    
-    /* Select the list container here  */
-    .listContainer{
-    
-    /* Set this to display none */
-    /* display: none; */
-    /* Move the list off the screen here  */
-    /* transform: translateX(-100%); */
-    
-    /*  */
-
-    }
-    
-    /* Select the Navbar container here  */
-    .container{
-    
-    }
-    
-    
-    /* */
-
-    
-}
-
-
-@media (max-width: 767px) {
-    /* Select the hamburger menu here  */
-    .hamburgerMenu{
-    
-        /* Move the Hamburer onto the screen here  */
-        /* Se the display to visible  */
-        
-    }
-    
-    
-}
 
 
 
