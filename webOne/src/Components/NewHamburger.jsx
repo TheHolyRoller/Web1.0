@@ -67,9 +67,9 @@ function NewHamburger() {
   return (
     // Main container 
     <div className={NewHamburgerCSS.container}>
+    <input type="checkbox"/>
     {/* Create the navbar here  */}
     {/* You can you the previous code to do so  */}
-    <input type={"checkbox"}/>
     <nav className={NewHamburgerCSS.navBar}> 
     {/* Add the nested elements for the contents of the navbar here  */}
     Will this work 

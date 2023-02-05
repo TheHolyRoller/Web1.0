@@ -33,26 +33,29 @@ box-sizing: border-box;
     
   
     
+    
 }
 
 .slideMenu{
 
     background-color: wheat;
     /* Add in the dimensions here  */
-    width: 30vw;
-    height: 40vh; 
+    height: 100vh;
+    width: 100%; 
     
     
       /* Move the Slide in Menu off the screen here  */
     /* Use the transforms here  */
     position: absolute;
     left: 0; 
-    /* Now move the box off the page */
-    /* Does not appear to do much  */
-    transform-origin: 0% 0%;
-    /* Now move things along it's axies  */
-    /* This appears to work  */
-    /* transform: translate(-100%, 0); */
+    transform-origin:  0% 0%;
+    /* transition: transform 0.5s ease-in-out; */
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+    transform: translate(-150%);
     
     /* Add in the transition timing here  */
     transition: transform 0.5s cubic-bezier(0.77, 0.2,0.05,1.0);
@@ -71,9 +74,17 @@ box-sizing: border-box;
 
 
 
+/* See if this is selecting the right thing  */
 
-nav input:checked ~ section{
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
 
-    transform: none; 
+
+
+
+nav input[type="checkbox"]:checked ~ .slideMenu{
+
+    transform: translate(0); 
     
 }

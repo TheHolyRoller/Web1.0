@@ -47,6 +47,8 @@ body{
     width: 100vw;   
     height: 60px;
     
+    /* This might break things  */
+    
     
     
 }
@@ -66,10 +68,25 @@ width: 100vw;
 height: 50px;
 
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Add in the Logo container here  */
+.logoContainer{
 
+
+    width: 20vw;
+    height: 100%;
+   
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    padding-left: 4rem; 
+    
+
+}
 
 .logo{
     
@@ -115,7 +132,36 @@ height: 50px;
 
 /* Add in the media queries here  */
 
+/* Add in the media query to make hid the Hamburger menu when the screen width is a certain width */
+@media (min-width: 950px){
 
+.newHamburger{
+    display: none;
+    
+    
+}
+.wrapper{
+    display: none;
+}
+
+}
+
+
+@media (max-width: 850px) {
+    .listContainer{
+        display: none;
+        
+    }
+    
+    .logoContainer{
+    
+        display: none;
+        
+    }
+}
+
+
+/* Add in the other media query here to add in the Hamburger Menu  */
 
 
 
