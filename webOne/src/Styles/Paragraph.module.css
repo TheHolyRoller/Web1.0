@@ -1,0 +1,96 @@
+
+
+/* Import the font family here  */
+
+
+/* Add in the Root variables here  */
+:root{
+
+}
+
+
+
+/* Add in the global selector here  */
+*{
+/* Add in the padding and margin here  */
+padding: 0; 
+margin: 0; 
+
+
+/* Add in the outline here  */
+/* outline: 4px solid limegreen; */
+
+}
+
+/* Add in the html scroll behaviour here  */
+html {
+    scroll-behavior: smooth;
+    
+}
+
+/* This can cause clashing with other other components style-sheet  */
+body{
+
+    /* Add in the correct dimensions here  */
+    width: 100vw; 
+    /* min-height: 100vh; */
+    
+    /* Add in the box sizing here  */
+    box-sizing: border-box;
+}
+ 
+/* Add in the main container here  */
+.container{
+
+background-color: purple;
+
+
+}
+/* Add in the secondary containers here  */
+.paragraphContainer{
+
+outline: 6px solid blue; 
+height: auto;
+
+
+
+}
+
+
+.paragraph{
+
+outline: 3px solid limegreen; 
+
+
+}
+
+/* Add in the media queries here  */
+@media (max-width: 756px){
+
+
+
+}
+
+
+
+
+/* Add in the container queries here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

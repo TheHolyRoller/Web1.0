@@ -10,14 +10,12 @@
 /* Add in the global ruleset here  */
 *{
     /* Add in the padding and margin here  */
-    
-    
-    /* Add in the box sizing here  */
-    
-    /* Add in the outline here  */
+    outline: none; 
+
+
+
 }
 
-/* Add in the html scroll behaviour here  */
 
 html{
 
@@ -30,31 +28,28 @@ html{
 
 body{
 
-    /* Make sure that the body is a responsive height and width  */
     width: 100vw; 
-    min-height: 100vh;
-    
-    /* Add in the background color here  */
-    
+    min-height: 100vh;    
     
 }
-
-
-/* Add in the container ruleset here  */
 
 .container{
 
+
     width: 100vw;   
-    height: 60px;
     
-    /* This might break things  */
+    /* Find out why there is a gap when this increases */
+    /* height: 75px;     */
+    /* height: 90px;  */
+    background-color: black;
+    /* color: rgba(91, 87, 87, 0.3);  */
+    /* color: black;  */
+
     
     
+    box-shadow: inset ;
     
 }
-
-/* Add in the styling for the main navbar here  */
-
 .navBar{
 
 
@@ -63,17 +58,23 @@ body{
 
 .navContainer{
 
-background-color: whitesmoke;
-width: 100vw;
-height: 50px;
-
+    background-color: whitesmoke;
+    width: 100vw;
+    /* Reduce the navbar height with a media query */
+    height: 110px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    /* box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.3); */
+    z-index: 20000 !important;
+    /* color: rgba(91, 87, 87, 0.3);  */
+    
+    
+    
 }
 
-/* Add in the Logo container here  */
+
 .logoContainer{
 
 
@@ -85,54 +86,99 @@ height: 50px;
     top: 0; 
     padding-left: 4rem; 
     
+    
 
+}
+
+  .navContainer  a{
+
+
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    /* color: rgba(51, 49, 49, 0.3);  */
+    color: rgb(86, 97, 107); 
+    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045) 300ms;
+    
+    
+    padding-right: 1rem; 
+}
+
+ .navContainer a:hover{
+
+    color: black; 
+    
+}
+
+    .wrapper{
+
+    position: absolute;
+    left: 0; 
+    margin-bottom: 2.5rem;
+    
 }
 
 .logo{
     
-    /* Make sure the logo is properly centered here  */
-    /* Find the Logo container and increase it's width appropriately  */
-    /* Then turn it into a flex container and center the contents  */
-    
-
+    color: black;     
 }
 
     .listContainer{
     
-    
-    
-    }
-    
-    
-    .list{
-    
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    /* See if this works  */
+    padding-left: 15rem;
     
     }
     
     
-    .listItem{
+      .list ul{
+    
+        list-style: none;
+        text-align: center;
+        text-decoration: none;
+        color: black; 
+        
+        
+    }
+    
+    
+    .listItem  {
         display: inline;
         padding-right: 0.5rem;
+        
+    }
+
+
+@media (max-width: 941px){
+    
+   
+    
+    .logo{
+    
+        display: none;
+        
+    }
+    
+    .listContainer ul{
+    
+        display: none;
+        
 
     }
     
+    
+    /* Add in the navbar selector here  */
+    .navContainer{
+    
+        height: 60px; 
+        
+    }
+    
+}
 
-
-/* Add in the styling and positioning for the Hamburger menu here  */
-
-
-/* Add in the sub containers here  */
-
-
-
-
-/* Add in the hover effects here  */
-
-
-
-/* Add in the media queries here  */
-
-/* Add in the media query to make hid the Hamburger menu when the screen width is a certain width */
 @media (min-width: 950px){
 
 .newHamburger{
@@ -159,16 +205,3 @@ height: 50px;
         
     }
 }
-
-
-/* Add in the other media query here to add in the Hamburger Menu  */
-
-
-
-
-
-
-
-
-
-

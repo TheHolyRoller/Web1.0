@@ -68,19 +68,70 @@ function NewHamburger() {
     // Main container 
     <div className={NewHamburgerCSS.container}>
     <input type="checkbox"/>
-    {/* Create the navbar here  */}
-    {/* You can you the previous code to do so  */}
-    <nav className={NewHamburgerCSS.navBar}> 
-    {/* Add the nested elements for the contents of the navbar here  */}
-    Will this work 
-    {/* Place the checkbox here  */}
-    
-    
-    </nav>
+   
+   {/* Add in the Hamburger Bars here  */}
+   
+   {/* Add in a wrapper here to move the whole thing around  */}
+   <div className={NewHamburgerCSS.wrapper}>
+   <span className={NewHamburgerCSS.bar}></span>
+   <span className={NewHamburgerCSS.bar}></span>
+   <span className={NewHamburgerCSS.bar}></span>
+   </div>
+   
+   
     {/* Add the box in here that way it is now in the navbar and is kept seperate */}
     <section className={NewHamburgerCSS.slideMenu}>
-    {/*  */}
-    Give this some content so it can show up 
+    {/* Add in the list container here */}
+    <ul className={NewHamburgerCSS.menuList}>
+      {/* Add in the list items here  */}
+      <li className={NewHamburgerCSS.listItem}>
+      {/* Add in the anchor tags here with their content */}
+      <a href='#' className={NewHamburgerCSS.menuItem} alt="alt">
+        Home 
+      </a>
+      </li>
+      
+      {/* Add in the rest of the list items here  */}
+      <li className={NewHamburgerCSS.listItem}>
+        {/* Add in the anchor tag here  */}
+        <a href='#' className={NewHamburgerCSS.menuItem}>
+          About
+        </a>
+        </li>
+        
+        <li className={NewHamburgerCSS.listItem}>
+          <a href='#' className={NewHamburgerCSS.menuItem} alt="alt"> 
+          Ministry 
+          </a>
+        </li>
+        
+        <li className={NewHamburgerCSS.listItem}>
+          <a href='#' className={NewHamburgerCSS.menuItem} alt="alt">
+            Meetings 
+          </a>
+        </li>
+      
+        <li className={NewHamburgerCSS.listItem}>
+          <a href='#' className={NewHamburgerCSS.menuItem}>
+            Volunteering 
+          </a>
+        </li>
+      
+      <li className={NewHamburgerCSS.listItem}> 
+      <a href='#' className={NewHamburgerCSS.menuItem}>
+        Give 
+      </a>
+      </li>
+      
+      
+      
+      
+      
+      
+    </ul>
+
+    
+    
     </section>
     
     

@@ -1,5 +1,7 @@
 *{
 
+padding: 0; 
+margin: 0; 
 
 }
 
@@ -7,84 +9,142 @@ html{
 /* Add in the smooth scroll property here  */
 scroll-behavior: smooth;
 
-
-
 }
+
 
 body{
 
-/* Make sure that the height and width are set correctly  */
-/* Make sure the width is set to width: 100vw; and min-height: 100vh */
-
 width: 100vw; 
 min-height: 100vh; 
-/* Set the box sizing here  */
 box-sizing: border-box;
 
 
 }
 
+input {
 
-/* Put the container here  */
-
-.container{
-    
-    /* Position the slide in Menu Absolutely here  */
-    
+  position: absolute;
+  display: block;
+  top: 7px;
+  left: 1.2rem;
+  padding-left: 10px;
   
-    
-    
+  /* TO-Do Decrease the z-index here  */
+  z-index: 2000;  
+  opacity: 0; 
+
+  cursor: pointer;
 }
+
+
+/* This is used for the Hamburger bars  */
+.wrapper{
+
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  padding-left: 8px; 
+  padding-bottom: 5px;
+  cursor: pointer;
+   
+}
+
+.bar{
+
+  height: 4px; 
+  width: 33px; 
+  color: black; 
+  background-color: black;
+  
+  
+  display: block;
+  margin-bottom: 5px;         
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
 
 .slideMenu{
 
-    background-color: wheat;
-    /* Add in the dimensions here  */
     height: 100vh;
-    width: 100%; 
+    width: 300px; 
+    border-radius: 3%;
     
     
-      /* Move the Slide in Menu off the screen here  */
-    /* Use the transforms here  */
+    background-color: slategrey;
+    opacity: 0.89;
+    
+    /* Might want to remove or tweak this later  */
+    box-shadow: inset 5px 2px 50px rgba(0, 0, 0, 0.3);
+    
+    
+        
+    z-index: 10;
     position: absolute;
     left: 0; 
-    transform-origin:  0% 0%;
-    /* transition: transform 0.5s ease-in-out; */
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  display: flex;
-  flex-direction: column;
-  margin-left: -40px;
-  padding-left: 50px;
-    transform: translate(-150%);
+    padding-left: 50px;
+    /* padding-top: 4rem;  */
+    margin-top: 2.1rem; 
     
-    /* Add in the transition timing here  */
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    transform-origin:  0% 0%;
+    transform: translate(-200%);
     transition: transform 0.5s cubic-bezier(0.77, 0.2,0.05,1.0);
 
-}
-
-/* Add the code in here for the checkbox to see if it has been check  */
-
-
-
-.navBar{
-
-    
-
-}
-
-
-
-/* See if this is selecting the right thing  */
-
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(0);
   }
+  a{
+  
+    color: lightslategray; 
+    
+  }
+  
+  
+  .listContainer{
+    width: 100%;  
+    
+ 
+  }
+  
+  .menuList{
+  /* background-color: black; */
+  width: 100%;
+  padding-top: 1.5rem; 
+  
 
+  }
+  
 
+/* Try chaning the siblings name  */
+.nav-container input[type="checkbox"]:checked ~ .menuList{
+    color: white; 
+
+  }
 
 
 nav input[type="checkbox"]:checked ~ .slideMenu{
 
     transform: translate(0); 
-    
+   
+}
+
+
+/* Add in the media queries here  */
+@media (max-width: 900px) {
+
+
 }

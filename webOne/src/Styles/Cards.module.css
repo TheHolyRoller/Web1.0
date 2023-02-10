@@ -5,11 +5,10 @@
 padding: 0; 
 margin: 0; 
 box-sizing: border-box;
- outline: 1px solid limegreen;
+ /* outline: 1px solid limegreen; */
+ 
  
 /* background: rgb(0 100 0 / 0.1) !important;  */
-
-
 }
 
 
@@ -20,49 +19,54 @@ body{
 min-height: 100vh;;
 width: 100%;
 display: flex;
-/* justify-items: center;   */
 justify-content: center;
-/* margin-leftcontent: 3rem; */
-
-
-
-
 
 }
 
 .container{
 
-/* Add in the dimensions here  */
-min-height: 100vh; 
-width: 90vw;
+width: 100vw;
 outline: solid 3px orange;
 
 
 /* Add the display type here  */
 display: grid;
 grid-template-columns: repeat(3, minmax(auto, 1fr)); 
+gap: 2rem; 
 
-/* Center everything here 
-*/
+
 justify-content: center;
 justify-items: center; 
-
-
-/* Add in the grid template here  */
+overflow: hidden;
 
 
 }
 
 /* this is the section with trouble  */
 
+/*  */
 .cardContainer{
   
-    outline: 4px solid blue;
-    /* Add in the dimensions here  */
-    /* width: 50rem;  */
-
+    /* outline: 4px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    overflow: hidden;
+    
+    outline: 10px solid red; 
+    transition: ease-in-out 300ms;
+    
 
 }
+
+.cardContainer:hover{
+
+    transform: scale(1.1);
+    transform: translateY(2deg);
+}
+
+
 
 /* Now assign each component their respective grid-area */
 
@@ -71,19 +75,22 @@ justify-items: center;
 /* The height here it auto  */
 .card{
 
-margin-right: 10%; 
-margin-left: 10%; 
+/* margin: 0 10%;  */
+
+
 display: flex;
 justify-content: center; 
-margin-bottom: 4rem; 
+align-items: center;
+border-radius: 10%;
+color: grey; 
 
-/* Add a height and width to this container and see if it makes a difference to the layout of the grid  */
-width: 100%;
-min-height: auto !important;
-
-/* outline: solid 4px white; */
+box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.3);
 
 
+
+/* background-color: blue; */
+/* max-height: 29rem; */
+min-height: 34rem;
 
 }
 
@@ -94,65 +101,152 @@ min-height: auto !important;
 display: flex; 
 justify-content: center; 
 width: 100%;
+padding-bottom: .5rem;
 
 
 }
 
-.imageTag{
 
-    /* Set the dimensions of the image here except the height  */
-    /* Make sure the width is responsive  */
-    width: 100%;
-    border-radius: 5%;
-    
-
-}
 
 .button{
     
     /* grid-area: button; */
-    outline: 4px solid white !important; 
+    /* outline: 4px solid white !important;  */
     display: flex; 
     justify-content: center; 
     width: 100%; 
     
 }
 
+
+
 .paragraph{
 
-    grid-area: paragraph;
+    /* Not working  */
+    /* grid-area: paragraph; */
     
-    outline: 4px solid red;
+    /* outline: 4px solid red; */
     border-radius: 5%; 
+    padding: 2% 5%; 
     
+    width: 19rem; 
+    min-width: 12rem;
     
 }
 
-.cardImage{
+/* Add in the dimensions for the image here  */
+.imageContainer img {
+  
+  max-height: 100%;
+  margin: auto;
+  display: block;
+  border-radius: 5%; 
+}
 
 
+.mainImageContainer{
     width: 100%;
-    display: flex;  
-    justify-content: center;    
     
-
-}
-/* THIS IS LIMITING THE IMAGE HEIGHT  */
-img {
-
-height: 30vh !important;
-/* max-height: auto !important; */
-
+    display: flex; 
+    justify-content: center;
+    
+    
 }
 
+/* Container for the img tag  */
+.imageContainer{
 
-    @media (max-width: 768px){
+     width: 19rem;
+     overflow: hidden;
+     /* outline: 5px solid yellow;  */
+    min-height: 14rem;  
+    position: relative;
+    
+}
+
+
+    @media (max-width: 1151px){
+        
+        .imageContainer{
+        
+            width: 23vw; 
+        
+        
+        }
+        .container{
+        
+            padding-bottom: 1rem;
+            
+        }
+        
+        /* Select the paragraph container here  */
+        .paragraph{
+        
+            /* width: 18vw; */
+            width: 23vw; 
+            
+        }
+    }
+    
+    /* Reset the width setting here  */
+    @media (max-width: 871px){
+        
+        
+        .imageContainer{
+            
+            width: 19rem; 
+             
+
+        }
+        
+        .paragraph{
+            
+            width: 19rem; 
+            
+            
+        }
+        
+        
+
+    }
+
+
+    @media (max-width: 870px){
     
     /* Find out why this is not working  */
     .container{
         
         grid-template-columns: repeat(1, minmax(auto, 1fr)) !important;
         
+    }
+    
+    .card{
+    
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .button{
+    
+        margin-top: 3rem;
+    }
+    
+    /* Reset the clamping for the Image and Paragraph rulesets here  */
+    
+    .paragraph{
+    /* This value will need tweaking  */
+        /* width: 9rem !important;  */
+        
+
+    }
+    
+    .imageContainer{
+            
+          /* width: 19rem !important; 
+          max-width: 9rem; 
+          min-width: 9rem;  */
+          
+
     }
 }
 

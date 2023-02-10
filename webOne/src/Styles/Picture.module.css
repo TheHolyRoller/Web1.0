@@ -1,0 +1,126 @@
+
+
+/* Import the font family in here  */
+
+
+/* Add in the root variables here  */
+
+
+/* So there's one more thing left to do for this component and that is the text. 
+
+So far I've just been placing everything with abosulte positioning but this can only work so well. 
+
+One idea would be to create a container that is absolutely positioned within the the image 
+
+Now the image is already absolutely positioned. 
+
+So we have this container go over the image and ensure that it's opec. 
+
+Next we turn this container into a flex container and then align and justify everything into the center. 
+
+
+
+
+*/
+
+:root{
+
+
+}
+
+
+*{
+
+
+
+}
+
+
+/* Add in the body rule-set here  */
+
+body{
+
+
+}
+
+
+/* Add in the main container here  */
+
+.container {
+
+    width: 100vw; 
+    min-height: 50vh;
+    position: relative;
+    text-align: center;
+    color: black;
+    overflow: hidden;
+    
+    
+
+}
+
+
+/* This is where the problems are coming from  */
+.imageContainer{
+    
+    position: relative;
+    display: block;
+    /* This padding at the top could be causing the trouble  */
+    /* padding-top: 56.5% !important; */
+    
+    /* This will need some tweaking  */
+    /* box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.3); */
+    
+
+}
+
+img{
+
+position: absolute;
+top: 0; 
+left: 0; 
+width: 100%;    
+height:50vh;    
+
+
+}
+
+/* Add in the image text container here  */
+.imageTextContainer{
+
+    position: absolute;
+    display: block; 
+    top: 0;     
+    left: 50%;    
+    transform: translateX(-50%) !important;
+    padding-top: 5%; 
+    
+    
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 50vh; 
+
+
+}
+
+/* Position the text absolutely over the image  */
+.imageText{
+
+/* z-index: 60;         */
+/* color: rgb(40, 37, 37); */
+ 
+ color: antiquewhite;
+ font-size: large; 
+ 
+ 
+ 
+}
+
+
+
+
+/* Add in the secondary containers here  */
+

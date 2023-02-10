@@ -1,0 +1,49 @@
+
+
+/* Import the font family here  */
+
+
+
+*{
+
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+    outline: 4px solid limegreen;
+    
+}
+
+body{
+
+
+    min-height: 100vh;
+    width: 100vw;
+    
+}
+html {
+
+    scroll-behavior: smooth;
+    
+}
+
+
+.container{
+
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+
+.card{
+
+
+
+
+    background-color: white;
+    width: 10rem;
+    height: 15rem; 
+}
+
+
+

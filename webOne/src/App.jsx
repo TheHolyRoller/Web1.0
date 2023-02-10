@@ -3,25 +3,55 @@ import reactLogo from './assets/react.svg'
 import AppCSS from  './App.module.css';
 import Cards from './Components/Cards'; 
 import Navbar from './Components/Navbar'; 
-import HamburgerPrototype from './Components/HamburgerPrototype';
-import Footer from './Components/Footer.jsx'; 
-import NewHamburger from './Components/NewHamburger';
-import ExampleHamburger from './Components/ExampleHamburger'; 
-
+import Paragraph from './Components/Paragraph';
+import Footer from './Components/Footer.jsx';  
+import Picture from './Components/Picture'; 
+  
 
 function App() {
   
     return (
+    <>
     <div className="App">
         
-        {/* Add in the Hamburger prototype here  */}
-        {/* <HamburgerPrototype/> */}
-   
-   
-    <Navbar/>
+    <section className={AppCSS.container} >
+    
+    <div className={AppCSS.navbar}>
+    <Navbar className={AppCSS.navbar} />
+    </div>
+    
+    
+    {/* Add in the picture here  */}
+    <div className={AppCSS.picture}>
+    <Picture className={AppCSS.picture}  />  
+    </div>
+    
+    
+    <div className={AppCSS.paragraphContainer}>
+    <div className={AppCSS.paragraph}>
+    <Paragraph className={AppCSS.paragraphTag}/>     
+    </div>
+    </div>
+    
+    {/* Add in the Cards here  */}
+    <div className={AppCSS.cards}>
+    <Cards className={AppCSS.cards} />
+    </div>
+    
+    {/* Add in the Footer here */}
+    <div className={AppCSS.footer}>
+    <Footer className={AppCSS.footer}/>
+    </div>
+      
+    {/* <NewCards/> */}
+    </section>
+    
+    {/* Add in the new cards here */}
+    
     
     </div>
     
+    </>
     
   );
   

@@ -23,11 +23,15 @@ function Cards() {
     </h1>
     </div>
     
-    <div className={CardsCSS.cardImage}>
+    <div className={CardsCSS.mainImageContainer}>
+    
+    <div className={CardsCSS.imageContainer}>
       {/* Add in the image here for the Card  */}
-      <img className={CardsCSS.imageTag} src="https://images.pexels.com/photos/13894717/pexels-photo-13894717.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"/>
+      <img className={CardsCSS.imageTag}  src="https://images.pexels.com/photos/13894717/pexels-photo-13894717.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"/>
+  
   
       </div>
+    </div>
       {/* Add in the text paragraph here  */}
        <p className={CardsCSS.paragraph}>
        {/* Add in the text here  */}
@@ -37,11 +41,11 @@ function Cards() {
        </p>
        
        {/* Add in the button here  */}
-       <button className={CardsCSS.button}>
+       <div className={CardsCSS.button}>
        <a href='#' alt="alt"> 
        Learn more 
-       </a>
-       </button>
+       </a> 
+       </div>
          
     </div>
       
@@ -59,11 +63,14 @@ function Cards() {
     </h1>
     </div>
     
-    <div className={CardsCSS.cardImage}>
+    <div className={CardsCSS.mainImageContainer}>
+    
+    <div className={CardsCSS.imageContainer}>
       {/* Add in the image here for the Card  */}
       <img className={CardsCSS.imageTag} src="https://images.pexels.com/photos/13894717/pexels-photo-13894717.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"/>
   
       </div>
+    </div>
       {/* Add in the text paragraph here  */}
        <p className={CardsCSS.paragraph}>
        {/* Add in the text here  */}
@@ -73,11 +80,11 @@ function Cards() {
        </p>
        
        {/* Add in the button here  */}
-       <button className={CardsCSS.button}>
+       <div className={CardsCSS.button}>
        <a href='#' alt="alt"> 
        Learn more 
-       </a>
-       </button>
+       </a> 
+       </div>
          
     </div>
       
@@ -96,11 +103,14 @@ function Cards() {
     </h1>
     </div>
     
-    <div className={CardsCSS.cardImage}>
+    <div className={CardsCSS.mainImageContainer}>
+    
+    <div className={CardsCSS.imageContainer}>
       {/* Add in the image here for the Card  */}
       <img className={CardsCSS.imageTag} src="https://images.pexels.com/photos/13894717/pexels-photo-13894717.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"/>
   
       </div>
+    </div>
       {/* Add in the text paragraph here  */}
        <p className={CardsCSS.paragraph}>
        {/* Add in the text here  */}
@@ -110,11 +120,11 @@ function Cards() {
        </p>
        
        {/* Add in the button here  */}
-       <button className={CardsCSS.button}>
+       <div className={CardsCSS.button}>
        <a href='#' alt="alt"> 
        Learn more 
        </a> 
-       </button>
+       </div>
          
     </div>
       

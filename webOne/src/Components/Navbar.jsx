@@ -16,7 +16,13 @@ Then we can focus on styling and polishing the whole thing.
 And once that is done we can focus on integration and then Routing. 
 
 
-So 
+So the plan is now I'm going to create the bars for the Hamburger Menu and put everything in the right place. 
+
+Then I'm going to create the rest of the components. 
+
+
+
+
 
 */
 // Try importing the Hamburger Menu here 
@@ -40,13 +46,14 @@ function Navbar() {
     </div>
     </div>
     
-    {/* add in the Hamburger Composite Component here  */}
+    
+    {/* add in the Hamburger Composite Component here             */}
     {/* Add a wrapper to this component  */}
     <div className={NavbarCSS.wrapper}>
     <NewHamburger className={NavbarCSS.newHamburger}/>  
     </div>
-
     
+      
     
     {/* Add in the list container here  */}
     <div className={NavbarCSS.listContainer}> 
@@ -60,6 +67,7 @@ function Navbar() {
     <a href='#' alt="alt"> 
     Ministry 
     </a>
+    
     </li>    
     
     <li className={NavbarCSS.listItem}>
