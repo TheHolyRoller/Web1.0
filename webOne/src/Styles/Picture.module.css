@@ -30,6 +30,8 @@ Next we turn this container into a flex container and then align and justify eve
 
 
 *{
+padding: 0; 
+margin: 0; 
 
 
 
@@ -39,6 +41,8 @@ Next we turn this container into a flex container and then align and justify eve
 /* Add in the body rule-set here  */
 
 body{
+
+box-sizing: border-box;
 
 
 }
@@ -108,19 +112,8 @@ height:50vh;
 
 /* Position the text absolutely over the image  */
 .imageText{
-
-/* z-index: 60;         */
-/* color: rgb(40, 37, 37); */
  
  color: antiquewhite;
  font-size: large; 
  
- 
- 
 }
-
-
-
-
-/* Add in the secondary containers here  */
-
