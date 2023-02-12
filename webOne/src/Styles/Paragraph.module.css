@@ -42,24 +42,24 @@ body{
 /* Add in the main container here  */
 .container{
 
-background-color: purple;
+/* background-color: purple; */
 
 
 }
 /* Add in the secondary containers here  */
 .paragraphContainer{
 
-outline: 6px solid blue; 
+/* outline: 6px solid blue;  */
 height: auto;
-
-
+margin-top: 3rem; 
+/* margin-bottom: 3rem;  */
 
 }
 
 
 .paragraph{
 
-outline: 3px solid limegreen; 
+/* outline: 3px solid limegreen;  */
 
 
 }
@@ -67,6 +67,11 @@ outline: 3px solid limegreen;
 /* Add in the media queries here  */
 @media (max-width: 756px){
 
+.paragraphContainer{
+    margin-top: 0; 
+    
+
+} 
 
 
 }

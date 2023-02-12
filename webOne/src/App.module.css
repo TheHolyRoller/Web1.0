@@ -30,8 +30,6 @@ overflow-x: hidden;
   max-width: 100vw; 
   /* background-color: blue; */
   overflow: hidden;
-
-
   min-height: 100vh;
              
 }
@@ -60,7 +58,8 @@ justify-content: center;
 height: 6rem;
 /* background-color: aliceblue; */
 /* outline: 10px solid red;  */
-margin-top: -2rem; 
+/* margin-top: -2rem;  */
+margin-bottom: 4rem; 
 
 
 }
@@ -121,6 +120,8 @@ height: 100%;
     }
     
     .paragraphContainer{
+    
+        margin-bottom: 7.3rem;
           
     }
     
@@ -142,7 +143,6 @@ height: 100%;
     justify-content: center;
     padding: 0 3%; 
     
-      
     }
 
     
@@ -159,7 +159,8 @@ margin-top: 5rem;
   
   .paragraphContainer{
     
-    margin-top: 0;  
+    margin-top: 2.5rem;  
+    margin-bottom: 3.5rem; 
    
   }
 

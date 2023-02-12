@@ -55,7 +55,6 @@ function Navbar() {
     
       
     
-    {/* Add in the list container here  */}
     <div className={NavbarCSS.listContainer}> 
     
     {/* Add in the List here  */}

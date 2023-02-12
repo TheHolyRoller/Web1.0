@@ -37,22 +37,11 @@ body{
 
 
     width: 100vw;   
-    
-    /* Find out why there is a gap when this increases */
-    /* height: 75px;     */
-    /* height: 90px;  */
-    background-color: black;
-    /* color: rgba(91, 87, 87, 0.3);  */
-    /* color: black;  */
 
-    
-    
-    box-shadow: inset ;
+    background-color: black;
     
 }
 .navBar{
-
-
 
 }
 
@@ -60,18 +49,13 @@ body{
 
     background-color: whitesmoke;
     width: 100vw;
-    /* Reduce the navbar height with a media query */
-    height: 110px;
+    height: 108px;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    /* box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.3); */
     z-index: 20000 !important;
-    /* color: rgba(91, 87, 87, 0.3);  */
-    
-    
-    
+
 }
 
 
@@ -85,29 +69,23 @@ body{
     left: 0; 
     top: 0; 
     padding-left: 4rem; 
-    
-    
 
 }
 
   .navContainer  a{
 
+      padding-right: 1rem; 
 
     text-align: center;
     text-decoration: none;
     list-style: none;
-    /* color: rgba(51, 49, 49, 0.3);  */
     color: rgb(86, 97, 107); 
-    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045) 300ms;
-    
-    
-    padding-right: 1rem; 
+    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045) 300ms;    
 }
 
  .navContainer a:hover{
 
     color: black; 
-    
 }
 
     .wrapper{
@@ -118,9 +96,21 @@ body{
     
 }
 
+
+.logoContainer{
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 90px; 
+    margin-left: 18.5%; 
+    
+
+}
+
 .logo{
     
-    color: black;     
+    color: black;      
 }
 
     .listContainer{
@@ -128,8 +118,11 @@ body{
     list-style: none;
     text-align: center;
     text-decoration: none;
-    /* See if this works  */
-    padding-left: 15rem;
+    padding-left: 12rem;
+    
+    display: flex;
+    align-items: center;
+    padding-bottom: 1%;
     
     }
     
@@ -140,22 +133,19 @@ body{
         text-align: center;
         text-decoration: none;
         color: black; 
-        
-        
+           
     }
     
     
     .listItem  {
         display: inline;
         padding-right: 0.5rem;
-        
     }
 
 
 @media (max-width: 941px){
     
    
-    
     .logo{
     
         display: none;
@@ -165,12 +155,8 @@ body{
     .listContainer ul{
     
         display: none;
-        
-
     }
-    
-    
-    /* Add in the navbar selector here  */
+        
     .navContainer{
     
         height: 60px; 
@@ -183,16 +169,12 @@ body{
 
 .newHamburger{
     display: none;
-    
-    
 }
 .wrapper{
     display: none;
 }
 
 }
-
-
 @media (max-width: 850px) {
     .listContainer{
         display: none;

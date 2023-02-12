@@ -6,8 +6,7 @@ padding: 0;
 margin: 0; 
 box-sizing: border-box;
  /* outline: 1px solid limegreen; */
- 
- 
+
 /* background: rgb(0 100 0 / 0.1) !important;  */
 }
 
@@ -15,7 +14,6 @@ box-sizing: border-box;
 
 body{
 
-/* Add the appropriate min-height */
 min-height: 100vh;;
 width: 100%;
 display: flex;
@@ -26,10 +24,8 @@ justify-content: center;
 .container{
 
 width: 100vw;
-outline: solid 3px orange;
+/* outline: solid 3px orange; */
 
-
-/* Add the display type here  */
 display: grid;
 grid-template-columns: repeat(3, minmax(auto, 1fr)); 
 gap: 2rem; 
@@ -42,9 +38,6 @@ overflow: hidden;
 
 }
 
-/* this is the section with trouble  */
-
-/*  */
 .cardContainer{
   
     /* outline: 4px solid blue; */
@@ -54,7 +47,7 @@ overflow: hidden;
     
     overflow: hidden;
     
-    outline: 10px solid red; 
+    /* outline: 10px solid red;  */
     transition: ease-in-out 300ms;
     
 
@@ -66,17 +59,7 @@ overflow: hidden;
     transform: translateY(2deg);
 }
 
-
-
-/* Now assign each component their respective grid-area */
-
-
-
-/* The height here it auto  */
 .card{
-
-/* margin: 0 10%;  */
-
 
 display: flex;
 justify-content: center; 
@@ -84,12 +67,9 @@ align-items: center;
 border-radius: 10%;
 color: grey; 
 
-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.3);
+/* This was removed because it did not fit with the flow */
+/* box-shadow: inset 5px 5px 5px rgbas(0, 0, 0, 0.3); */
 
-
-
-/* background-color: blue; */
-/* max-height: 29rem; */
 min-height: 34rem;
 
 }
@@ -103,14 +83,12 @@ justify-content: center;
 width: 100%;
 padding-bottom: .5rem;
 
-
 }
 
 
 
 .button{
     
-    /* grid-area: button; */
     /* outline: 4px solid white !important;  */
     display: flex; 
     justify-content: center; 
@@ -122,9 +100,6 @@ padding-bottom: .5rem;
 
 .paragraph{
 
-    /* Not working  */
-    /* grid-area: paragraph; */
-    
     /* outline: 4px solid red; */
     border-radius: 5%; 
     padding: 2% 5%; 
@@ -170,19 +145,14 @@ padding-bottom: .5rem;
         .imageContainer{
         
             width: 23vw; 
-        
-        
+    
         }
         .container{
         
             padding-bottom: 1rem;
-            
         }
         
-        /* Select the paragraph container here  */
         .paragraph{
-        
-            /* width: 18vw; */
             width: 23vw; 
             
         }
@@ -195,8 +165,7 @@ padding-bottom: .5rem;
         .imageContainer{
             
             width: 19rem; 
-             
-
+        
         }
         
         .paragraph{
@@ -206,8 +175,6 @@ padding-bottom: .5rem;
             
         }
         
-        
-
     }
 
 
@@ -234,18 +201,11 @@ padding-bottom: .5rem;
     /* Reset the clamping for the Image and Paragraph rulesets here  */
     
     .paragraph{
-    /* This value will need tweaking  */
-        /* width: 9rem !important;  */
-        
+
 
     }
     
     .imageContainer{
-            
-          /* width: 19rem !important; 
-          max-width: 9rem; 
-          min-width: 9rem;  */
-          
 
     }
 }

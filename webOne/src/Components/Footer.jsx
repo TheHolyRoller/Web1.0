@@ -255,6 +255,7 @@ function Footer() {
       {/* Add in the social media icon here  */}
       <i class="bi bi-instagram"></i>
       Facebook
+      {/* <MdInstagram/> */}
       </a>
       </li>
       
@@ -265,6 +266,7 @@ function Footer() {
         {/* find out why this is not working  */}
           Instagram
           {/* <FacebookIcon/> */}
+          <MdFacebook className={FooterCSS.facebookIcon} />
           </a>
       </li>
       </ul>
