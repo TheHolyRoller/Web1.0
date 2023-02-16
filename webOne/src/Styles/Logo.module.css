@@ -1,0 +1,72 @@
+
+
+/* Import the font family here  */
+
+
+
+/* Add in the root variables here  */
+:root{
+--darkPrimaryColor: #5D4037; 
+--lightPrimaryColor: #D7CCC8; 
+--primaryColor: #795548; 
+--textColor: #FFFFFF; 
+--accentColor: #607d8b; 
+--primaryText: #212121;
+--secondaryText: #757575; 
+--dividerColor: #BDBDBD; 
+
+}
+
+
+/* Add in the outline, padding, and margin  */
+
+*{
+
+padding: 0; 
+margin: 0; 
+
+}
+
+/* Add in the html scroll behavior here  */
+html{
+
+    scroll-behavior: smooth;
+}
+
+
+/* Add in the body tag here  */
+
+body{
+
+    /* Add in the boxy sizing here  */
+    box-sizing: border-box;
+    /* Add in the responsive height and width here  */
+    min-height: 100vh;
+    min-width: 100vw;
+    
+    
+    
+}
+
+
+
+/* add in the main container here  */
+
+.container{
+    
+    /* Add in the display type and layout here  */
+    
+    /* Add in the positioning here  */
+    
+    
+
+}
+
+/* Add in the secondary containers here  */
+
+
+
+
+
+
+

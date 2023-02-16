@@ -69,6 +69,7 @@ function Cards() {
       {/* Add in the image here for the Card  */}
       <img className={CardsCSS.imageTag} src="https://images.pexels.com/photos/13894717/pexels-photo-13894717.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"/>
   
+  
       </div>
     </div>
       {/* Add in the text paragraph here  */}

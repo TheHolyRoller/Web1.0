@@ -6,19 +6,14 @@
     /* Add in your variables here  */
 }
 
-/* Be careful what you put in here because it will affect other compoents that are not related
-If it's in the same file as them 
-*/
+
+
 
 *{
-
-
 /* Make sure that the padding and margin is set  */
 padding:0; 
 margin: 0; 
-/* outline: 4px solid lime;  */
 box-sizing: border-box;
-
 
 }
 
@@ -41,7 +36,6 @@ html {
 /* Put the content container here  */
 .contentContainer{
     
-    /* Turn the Footer into a grid here  */
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 1rem; 
@@ -131,9 +125,31 @@ a:hover{
     
     display: inline;
     
-    
     }
-/*  */
+
+.instagramFAIcon{
+
+        width: 2rem; 
+        height: 2rem; 
+        margin-right: 1rem; 
+        margin-top: 1rem; 
+        
+
+}
+
+
+
+.facebookMaterialIcon{
+
+  
+    margin-top: 1rem; 
+    width: 2rem; 
+    height: 2rem; 
+    
+    
+}
+
+
 
 
 

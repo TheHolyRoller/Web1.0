@@ -1,100 +1,78 @@
 import React from 'react';
 import NavbarCSS from '../Styles/Navbar.module.css'; 
-// Import the react hooks here 
+import NewHamburger from './NewHamburger';  
+import Logo from '../assets/logo-black.svg';
+import About from './About';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Link   } from 'react-router-dom'; 
+import Meetings from '../Components/Meetings'; 
+import Outreach from '../Components/Outreach'; 
+import KidsMinistry from '../Components/KidsMinistry'; 
+import Volunteering from '../Components/Volunteering'; 
+import Ministry from '../Components/Ministry'; 
 
-
-/** So the plan is now to Assemble everything together. 
-There is still quite a lot of work to do. 
-
-First of all the navbar works for the most part. 
-
-So it has functionality. But it needs contents and it needs to be 
-assembled and placed in the right place. 
-
-Then we can focus on styling and polishing the whole thing. 
-
-And once that is done we can focus on integration and then Routing. 
-
-
-So the plan is now I'm going to create the bars for the Hamburger Menu and put everything in the right place. 
-
-Then I'm going to create the rest of the components. 
-
-
-
-
-
-*/
-// Try importing the Hamburger Menu here 
-import NewHamburger from './NewHamburger';
-
-function Navbar() {
-  return (
-    
-    // Add in the container here 
+  
+  
+  function Navbar() {
+  
+    return (
+      <>
     <div className={NavbarCSS.container}>
     <nav className={NavbarCSS.navBar}>   
-    {/* Add in the navbar contents here  */}
-    {/* Add in the navbar container here  */}
+    
     <div className={NavbarCSS.navContainer}> 
     
-    {/* Add in the Logo here  */}
     <div className={NavbarCSS.logoContainer}> 
     
-    <div className={NavbarCSS.logo}> 
-    Logo
-    </div>
-    </div>
     
     
-    {/* add in the Hamburger Composite Component here             */}
-    {/* Add a wrapper to this component  */}
     <div className={NavbarCSS.wrapper}>
     <NewHamburger className={NavbarCSS.newHamburger}/>  
     </div>
     
-      
-    
     <div className={NavbarCSS.listContainer}> 
-    
-    {/* Add in the List here  */}
+    {/* <div className={NavbarCSS.logoContainer}>
+      <img src={Logo} style={{width: "200px" }} className={NavbarCSS.logoImage}></img>
+    </div> */}
+ 
     <ul className={NavbarCSS.list} >
 
-    {/* Add in the list contents here  */}
     <li className={NavbarCSS.listItem}>
-    {/* Add in the nested list item contents here  */}
-    <a href='#' alt="alt"> 
+    
+    
+    {/* For some reason this is breaking everything */}
+    {/* <Link to='ministry' element={<Ministry/>}>
     Ministry 
-    </a>
+    </Link> */}
     
     </li>    
     
     <li className={NavbarCSS.listItem}>
-    <a href='#' alt="alt">
+    <Link to='volunteer' element={<Volunteering/>}>
     Volunteering 
-    </a>
+    </Link>
+   
     </li>
     
     <li className={NavbarCSS.listItem}>
-    <a href="#" alt="alt">
+    <Link to='meetings' element={<Meetings/>}>
     Meetings 
-    </a>
+    </Link>
     </li>
     
     <li className={NavbarCSS.listItem}> 
-    <a href='#' alt="alt"> 
-    About 
-    </a>
+    <Link to='about' element={<About/>}>About</Link>
     </li>
     <li className={NavbarCSS.listItem}>
-      <a href="#" alt="alt"> 
+    <Link to='kidsMinistry' element={<KidsMinistry/>}>
       Kids Ministry 
-      </a>
+    </Link> 
+    
     </li>
     <li className={NavbarCSS.listItem}> 
-    <a href='#' alt="alt"> 
+    <Link to='outreach' element={<Outreach/>}>
     Outreach
-    </a>
+    </Link>
     </li>
     
     
@@ -102,10 +80,12 @@ function Navbar() {
     </div>
     
     
-    
+    </div>
     </div>
     </nav>
     </div>
+    
+    </>
   );
 }
 

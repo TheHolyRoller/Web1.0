@@ -79,6 +79,7 @@ function NewHamburger() {
    </div>
    
    
+   
     {/* Add the box in here that way it is now in the navbar and is kept seperate */}
     <section className={NewHamburgerCSS.slideMenu}>
     {/* Add in the list container here */}

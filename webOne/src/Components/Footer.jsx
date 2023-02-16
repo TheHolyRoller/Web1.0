@@ -4,7 +4,7 @@ import FooterCSS from '../Styles/Footer.module.css';
 import ReactDOM from 'react-dom'
 
 // import FaceBook from  '../assets/facebook'; 
-import {FaTwitter} from "react-icons/fa";
+import {FaInstagram, FaTwitter} from "react-icons/fa";
 
 import { MdFacebook } from 'react-icons/md'; 
 
@@ -253,9 +253,7 @@ function Footer() {
       <li className={FooterCSS.socialMediaListItem}>
       <a href="#" alt="alt"> 
       {/* Add in the social media icon here  */}
-      <i class="bi bi-instagram"></i>
-      Facebook
-      {/* <MdInstagram/> */}
+      <FaInstagram className={FooterCSS.instagramFAIcon}/>  
       </a>
       </li>
       
@@ -264,9 +262,9 @@ function Footer() {
       <li className={FooterCSS.socialMediaListItem}> 
         <a href='#' alt="alt">
         {/* find out why this is not working  */}
-          Instagram
-          {/* <FacebookIcon/> */}
-          <MdFacebook className={FooterCSS.facebookIcon} />
+          {/* <FacebookIcon className={FooterCSS.faceBookNPMIcon}/> */}
+          <MdFacebook className={FooterCSS.facebookMaterialIcon} />
+        
           </a>
       </li>
       </ul>

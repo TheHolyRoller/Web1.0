@@ -1,0 +1,49 @@
+/* Import the font family here  */
+
+
+/* Add in the global variables here  */
+
+
+
+/* Add in the html scroll behavior here  */
+
+
+*{
+
+padding: 0; 
+margin: 0; 
+
+
+}
+
+
+/* Add in the responsive dimensions for the body tag here  */
+body{
+
+box-sizing: border-box;
+min-width: 100vw; 
+min-height: 100vh;
+
+
+}
+
+
+/* Add in the main container here */
+.container{
+    
+    /* Add in the dimensions here  */
+    
+    /* Add in the positioning here  */
+    
+    /* Add in the layout here either flex box or grid  */
+    
+    
+    
+
+
+
+}
+
+
+/* Add in the secondary containers here  */
+

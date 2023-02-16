@@ -1,18 +1,75 @@
 /* Import the font family here  */
 
 /* Add the root variables in here  */
+
+/* Grey and Brown Color Pallette  */
 :root{
-
-
-}
+    --darkPrimaryColor: #5D4037; 
+    --lightPrimaryColor: #D7CCC8; 
+    --primaryColor: #795548; 
+    --textColor: #FFFFFF; 
+    --accentColor: #607d8b; 
+    --primaryText: #212121;
+    --secondaryText: #757575; 
+    --dividerColor: #BDBDBD; 
+    
+    }
+    
+    
+    /* Blue and Grey Color Pallette */
+    :root{
+    
+        --ldarkPrimaryColor: #455a64; 
+        --llightPrimaryColor: #cfd8dc;
+        --lprimaryColor: #607d8b;
+        --ltextColor: #FFFFFF;
+        --lprimaryTextColor: #212121;
+        --laccentColor: #9e9e9e;
+        --lsecondaryTextColor: #757575;
+        --ldividerColor: #BDBDBD;
+    }
+    
+    
+    /* 
+    
+    Okay great so now I've made a few basic tweaks to some of the website 
+    components. 
+    You've also added in the icons and styled them a bit. 
+    The color pallette has been chosen and added to the code of the project but it still 
+    needs integrating into the website. 
+    
+    There is a style theme that still needs to be mapped out and added to the project as well. 
+    
+    So the basic first version of the Logo has been created for the Website but it needs adding in. 
+    
+    There is also the task of creating the intermediary navbar. But this is for another day. 
+    
+    Then there is the task of adding in the Routing and Linking for all the buttons. 
+    
+    Once this has all been done then we have the tasks of creating the other pages but we can use a 
+    similar style structure and even reuse a lot of the components that have been built for the first 
+    page. 
+    
+    So let's just figure out what we are going to be doing now. 
+    
+    So first of all let's focus on adding in the Logo. 
+    
+    Then once that's done we can do the routing. 
+    
+    Once the routing is done if there is time we can focus on doing some changes for the intermediary 
+    nav bars. 
+    
+    
+    */
 
 
 /* Add in the global ruleset here  */
 *{
     /* Add in the padding and margin here  */
     outline: none; 
-
-
+    padding: 0; 
+    margin: 0; 
+    
 
 }
 
@@ -85,7 +142,7 @@ body{
 
  .navContainer a:hover{
 
-    color: black; 
+    color: whitesmoke; 
 }
 
     .wrapper{
@@ -137,14 +194,57 @@ body{
     }
     
     
+    /* This breaks things  */
+ li {
+        /* This destroys the buttons ability to function  */
+        /* pointer-events: none; */
+        cursor: pointer;
+        
+    }
+    
+    
     .listItem  {
         display: inline;
         padding-right: 0.5rem;
+    }
+    
+    .logoImage{
+        
+        width: 5rem; 
+        height: 6.6rem; 
+        position: absolute; 
+      
+        
+    
+
+    }
+    
+    .logoContainer{
+     
+       
+       
+        
+        
+    }
+    
+    /* Add in the media query to change the navbar to a media sized one  */
+    @media (max-width: 950px){
+    
+        /* Select the white navbar container here  */
+        
+        /* Select the Logo here  */
+        
+        
+        /* Select and style the buttons here  */
+        
+        
+        
     }
 
 
 @media (max-width: 941px){
     
+   /* Just remove this for now  */
    
     .logo{
     

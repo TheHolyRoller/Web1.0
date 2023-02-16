@@ -55,8 +55,8 @@ overflow: hidden;
 
 .cardContainer:hover{
 
-    transform: scale(1.1);
-    transform: translateY(2deg);
+    transform: scale(1.01);
+    transform: translateY(1.5deg);
 }
 
 .card{
